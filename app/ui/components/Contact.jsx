@@ -171,7 +171,7 @@ const Contact = () => {
                             <path ref={path}></path>
                         </svg>
                     </div>
-                    <div className="flex md:flex-row flex-col md:items-center justify-between gap-y-2 md:gap-y-0">
+                    <div className="flex md:flex-row flex-col md:items-center justify-between gap-y-2 md:gap-y-0 lg:h-[50px] h-fit">
                         <div className="flex items-center gap-x-6 2xl:text-5xl xl:text-4xl text-xl md:text-2xl lg:text-3xl">
                             <p className="font-[400]">email</p>
                             <p onClick={loading === false ? handleCopyText : ""} ref={emailClickRef} className={`font-extralight tracking-tighter list ${loading ? "" : `${isTouchDevice ? "" : "hover:scale-[1.05] transition-all active:opacity-30 duration-300"}`}`}>{loading ? <span className="opacity-0 -translate-x-10 copied text-primary">copied to clipboard!</span> : <input readOnly={true} className="select-none outline-none w-fit h-fit bg-transparent" type="text" value="hello@enosintech.dev"  id="emailInput" />  }</p>
