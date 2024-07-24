@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -88,13 +90,13 @@ const ProcessList = (props) => {
                 className={`invert size-10 lg:size-14 rotate-45 ${isTouchDevice ? "" : "group-hover:rotate-0 transition-all duration-300" }`}
              />
             {!isTouchDevice &&
-              <div ref={(el) => (processHoverRef.current[props.index] = el)} className={`bg-red-500 top-0 bottom-0 my-auto deep-shadow w-[30%] sm:w-[20%] lg:w-[18%] xl:w-[15%] h-[120%] sm:h-[140%] md:h-[160%] lg:h-[180%] xl:h-[200%] absolute z-20 opacity-0 rounded-[10px] overflow-hidden appearProcess pointer-events-none`}>
+              <div ref={(el) => (processHoverRef.current[props.index] = el)} className={`top-0 bottom-0 my-auto deep-shadow w-[30%] sm:w-[20%] lg:w-[18%] xl:w-[15%] h-[120%] sm:h-[140%] md:h-[160%] lg:h-[180%] xl:h-[200%] absolute z-20 opacity-0 rounded-[10px] overflow-hidden appearProcess pointer-events-none`}>
                   <Image 
-                    src=""
-                    alt=""
+                    src={props.image}
+                    alt="process list image"
                     width={100}
                     height={100}
-                    className="w-full h-full object-cover opacity-0"
+                    className="w-full h-full object-cover"
                   />
               </div>
             }

@@ -21,6 +21,28 @@ body, html {
     overscroll-behavior-x: none;
 }
 
+.line svg{
+
+    position: absolute;
+
+    height: 100px;
+
+    width: 100%;
+
+    top: -50px;
+
+}
+
+.line svg path{
+
+    stroke-width: 1px;
+
+    stroke: white;
+
+    fill: none;
+
+}
+
 .radial {
     background: radial-gradient(rgba(255,255,255,0.1), black 70%);
 }

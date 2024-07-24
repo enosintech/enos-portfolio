@@ -1,7 +1,7 @@
 "use client";
 
 import { useLenis } from "@studio-freight/react-lenis";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { Tilt } from "react-tilt";
 import Image from "next/image";
@@ -23,6 +23,13 @@ if(typeof window !== "undefined"){
 const Contact = () => {
 
     const emailClickRef = useRef();
+    const path = useRef(null);
+
+    let progress = 0;
+    let reqId = null;
+    let time = Math.PI / 2;
+
+    let x = 0.5;
 
     const lenis = useLenis();
     const [ enlarged, setEnlarged ] = useState();
@@ -51,12 +58,80 @@ const Contact = () => {
         }, 4000)
     }
 
+    const setPath = (value) => {
+        const width = window.innerWidth;
+        path.current.setAttributeNS(null, "d", `M 0 50 Q ${width * x} ${50 + value} ${width} 50`)
+    }
+    
+    const manageMouseMove = (e) => {
+        const { movementY } = e;
+    
+        const box = e.target.getBoundingClientRect();
+    
+        x = (e.clientX - box.left) / box.width;
+    
+        progress += movementY;
+    }
+
+    const animateIn = () => {
+        if(reqId){
+            cancelAnimationFrame(reqId);
+
+            time = Math.PI / 2;
+        }
+
+        setPath(progress);
+
+        reqId = requestAnimationFrame(animateIn);
+    }   
+
+    const resetAnimation = () => {
+        cancelAnimationFrame(reqId)
+
+        animateOut();
+    }
+
+    const lerp = (x, y, a) => x * (1 - a) + y * a;
+
+    const animateOut = () => {
+
+        let newProgress = progress * Math.sin(time);
+
+        setPath(newProgress)
+
+        progress = lerp(progress, 0, .04);
+
+        time+=0.2;
+
+        if(Math.abs(progress) > 0.5){
+
+        reqId = requestAnimationFrame(animateOut)
+
+        }
+
+        else{
+
+        time = Math.PI / 2;
+
+        progress = 0;
+
+        }
+    }
+
     useGSAP(() => {
         noTriggerToAnimations(".copied", {
             opacity: loading ? 1 : 0,
             x: loading ? 0 : -40,
         })
     }, { dependencies: [loading]})
+
+    useEffect(() => {
+        setPath(progress);
+
+        window.addEventListener('resize', () => {
+            setPath(progress);
+        })
+    }, [])
 
   return (
     <>
@@ -90,7 +165,12 @@ const Contact = () => {
             <div className="w-full h-[60%] flex flex-col gap-y-5 md:gap-y-20">
                 <p className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl md:text-center h-[30%] font-[500] tracking-tight">Let's create something <span className="text-primary">together</span></p>
                 <div className="w-full h-[70%] flex flex-col gap-y-4 md:px-14 lg:px-20 xl:px-28 2xl:px-44 relative">
-                    <div className="w-full h-0 border border-white"></div>
+                    <div className={`h-[1px] relative w-full mb-[20px] line`}>
+                        <span onMouseEnter={() => {animateIn()}} onMouseLeave={() => {resetAnimation()}} onMouseMove={(e) => {manageMouseMove(e)}} className={`w-full h-[40px] flex relative top-[-20px] z-[1]`}></span>
+                        <svg>
+                            <path ref={path}></path>
+                        </svg>
+                    </div>
                     <div className="flex md:flex-row flex-col md:items-center justify-between gap-y-2 md:gap-y-0">
                         <div className="flex items-center gap-x-6 2xl:text-5xl xl:text-4xl text-xl md:text-2xl lg:text-3xl">
                             <p className="font-[400]">email</p>
