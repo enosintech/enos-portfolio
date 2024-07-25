@@ -54,24 +54,6 @@ export const selectedWorks = [
         link: "",
         video: "/videos/makeupbyram.mp4",
         videoDuration: 11,
-        builtWith: [
-            {
-                id: 1,
-                name: "NextJs",
-            },
-            {
-                id: 2,
-                name: "Tailwind",
-            },
-            {
-                id: 3,
-                name: "PostgreSQL",
-            },
-            {
-                id: 4,
-                name: "Node.JS",
-            },
-        ],
     },
     {
         id: 1,

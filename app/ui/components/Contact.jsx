@@ -12,8 +12,6 @@ import { processAttributes, processList } from "@/app/lib/constantData";
 
 import { noTriggerToAnimations } from "@/app/utils/animations";
 
-import { FontGrotesque } from "@/app/utils/fonts";
-
 let isTouchDevice;
 
 if(typeof window !== "undefined"){
