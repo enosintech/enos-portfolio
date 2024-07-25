@@ -136,9 +136,10 @@ const Contact = () => {
 
   return (
     <>
-        <div className="w-full h-[70vh] lg:h-[90vh] flex flex-col px-3 mt-20 relative z-5">
-            <div className="w-full h-[15%] flex items-end pb-1 md:pb-0 md:items-center">
-                <p className="font-[400] tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">process</p>
+        <div className="w-full h-[100vh]"></div>
+        <div className="w-full h-[70vh] lg:h-[90vh] flex flex-col  px-3 mt-20 relative z-5">
+            <div className="w-full h-[11%] flex items-end pb-1 md:pb-0 md:items-center">
+                {/* <p className="font-semibold text-5xl">procedure</p> */}
             </div>
             <div className="w-full h-[85%] flex flex-col mt-3">
                 {processList.map((item, idx) => (
@@ -162,9 +163,9 @@ const Contact = () => {
                 </Tilt>
             ))}
         </div>
-        <div id="contact" className="w-full h-[100vh] flex flex-col items-center pt-44 px-3 relative">
+        <div className="w-full h-[100vh] flex flex-col items-center pt-44 px-3 relative">
             <div className="w-full h-[60%] flex flex-col gap-y-5 md:gap-y-20">
-                <p className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl md:text-center h-[30%] font-[500] tracking-tight">Let's create something <span className="text-primary">together</span></p>
+                <p id="contact" className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl md:text-center h-[30%] font-[500] tracking-tight">Let's create something <span className="text-primary">together</span></p>
                 <div className="w-full h-[70%] flex flex-col gap-y-4 md:px-14 lg:px-20 xl:px-28 2xl:px-44 relative">
                     <div className={`h-[1px] relative w-full mb-[20px] line`}>
                         <span onMouseEnter={() => {animateIn()}} onMouseLeave={() => {resetAnimation()}} onMouseMove={(e) => {manageMouseMove(e)}} className={`w-full h-[40px] flex relative top-[-20px] z-[1]`}></span>

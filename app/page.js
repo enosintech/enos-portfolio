@@ -4,6 +4,7 @@ import Cursor from "./ui/components/Cursor";
 import Hero from "./ui/components/Hero";
 import Loader from "./ui/components/Loader";
 import Navbar from "./ui/components/Navbar";
+import SelectedWorks from "./ui/components/SelectedWorks";
 import Work from "./ui/components/Work";
 
 const Home = () => {
@@ -14,7 +15,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Work />
+      {/* <Work /> */}
+      <SelectedWorks />
       <Contact />
     </>
   )
