@@ -22,25 +22,16 @@ body, html {
 }
 
 .line svg{
-
     position: absolute;
-
     height: 100px;
-
     width: 100%;
-
     top: -50px;
-
 }
 
 .line svg path{
-
-    stroke-width: 1px;
-
+    stroke-width: 2px;
     stroke: white;
-
     fill: none;
-
 }
 
 .radial {

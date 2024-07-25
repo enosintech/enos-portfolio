@@ -12,6 +12,8 @@ import { processAttributes, processList } from "@/app/lib/constantData";
 
 import { noTriggerToAnimations } from "@/app/utils/animations";
 
+import { FontGrotesque } from "@/app/utils/fonts";
+
 let isTouchDevice;
 
 if(typeof window !== "undefined"){
@@ -22,6 +24,7 @@ if(typeof window !== "undefined"){
 
 const Contact = () => {
 
+    const contactSlider = useRef();
     const emailClickRef = useRef();
     const path = useRef(null);
 
@@ -135,9 +138,9 @@ const Contact = () => {
 
   return (
     <>
-        <div className="w-full h-[70vh] lg:h-[85vh] flex flex-col px-3 mt-5 relative z-5">
+        <div className="w-full h-[70vh] lg:h-[90vh] flex flex-col px-3 mt-20 relative z-5">
             <div className="w-full h-[15%] flex items-end pb-1 md:pb-0 md:items-center">
-                <p className="font-[500] tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">my process</p>
+                <p className="font-[400] tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">process</p>
             </div>
             <div className="w-full h-[85%] flex flex-col mt-3">
                 {processList.map((item, idx) => (

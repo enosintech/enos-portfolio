@@ -50,7 +50,7 @@ export const selectedWorks = [
         name: "zedcart",
         secondName: "",
         category: "FULL STACK DEVELOPMENT",
-        text: "a social marketplace for users to buy and sell any goods or services",
+        text: "CLIENT",
         link: "",
         video: "/videos/makeupbyram.mp4",
         videoDuration: 11,
@@ -78,7 +78,7 @@ export const selectedWorks = [
         name: "makeupbyram",
         secondName: "",
         category: "DESIGN & DEVELOPMENT",
-        text: "portfolio website for a makeup artist based in Kuala Lumpur, Malaysia",
+        text: "CLIENT",
         link: "",
         video: "/videos/makeupbyram.mp4",
         videoDuration: 11,
@@ -88,7 +88,7 @@ export const selectedWorks = [
         name: "rusangu",
         secondName: "university",
         category: "FRONT END DEVELOPMENT",
-        text: "official website for Rusangu University based in Monze, Zambia",
+        text: "CLIENT",
         link: "",
         video: "/videos/makeupbyram.mp4",
         videoDuration: 11,
@@ -98,7 +98,7 @@ export const selectedWorks = [
         name: "you seem",
         secondName: "good to me",
         category: "FULL STACK DEVELOPMENT",
-        text: "a brand focused on self acceptance",
+        text: "PERSONAL",
         link: "",
         video: "/videos/makeupbyram.mp4",
         videoDuration: 11,
@@ -106,88 +106,11 @@ export const selectedWorks = [
     {
         id: 4,
         name: "mental health",
-        secondName: "data analysis",
+        secondName: "& data analysis",
         category: "DATA ANALYSIS WITH PYTHON",
-        text: "a jupyter notebook providing insights based off mental health data",
+        text: "PERSONAL",
         link: "",
         video: "/videos/makeupbyram.mp4",
         videoDuration: 11,
-    },
-]
-
-export const techStack = [
-    {
-        id: 1,
-        name: "Frontend",
-        data: [
-            {
-                id: 1,
-                name: "NextJS",
-                logo: "/icons/nextjs.png",
-            },
-            {
-                id: 2,
-                name: "React",
-                logo: "/icons/reactjs.png",
-            },
-            {
-                id: 3,
-                name: "Tailwind",
-                logo: "/icons/tailwindcss.svg",
-            },
-            {
-                id: 4,
-                name: "Figma",
-                logo: "/icons/figma.png",
-            },
-        ],
-    },
-    {
-        id: 2,
-        name: "Backend",
-        data: [
-            {
-                id: 1,
-                name: "Node.JS",
-                logo: "/icons/nodejs.png",
-            },
-            {
-                id: 2,
-                name: "SQL",
-                logo: "/icons/database.png",
-            },
-        ],
-    },
-    {
-        id: 3,
-        name: "Motion & 3D",
-        data: [
-            {
-                id: 1,
-                name: "GSAP",
-                logo: "/icons/gsap.webp",
-            },
-            {
-                id: 2,
-                name: "ThreeJS",
-                logo: "/icons/threejs.webp",
-            },
-        ],
-    },
-    {
-        id: 4,
-        name: "Languages",
-        data: [
-            {
-                id: 1,
-                name: "Typescript",
-                logo: "/icons/typescript.png",
-            },
-            {
-                id: 2,
-                name: "Python",
-                logo: "/icons/python.png",
-            },
-        ],
     },
 ]
