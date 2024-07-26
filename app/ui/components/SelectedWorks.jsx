@@ -8,6 +8,8 @@ import { gsap } from "../../utils/gsapLoader.js";
 import WebWorkDesc from "./WebWorkDesc.jsx";
 import WebWorkVideo from "./WebWorkVideo.jsx";
 
+import { selectedWorks } from "@/app/lib/constantData.js";
+
 const SelectedWorks = () => {
 
     const workRef = useRef();
@@ -71,32 +73,22 @@ const SelectedWorks = () => {
         <div className="absolute top-0 right-0 w-[80%] h-full pt-[88px] px-2 pb-2">
             <div className="w-full h-full relative">
                 <div className="w-full h-full absolute work1">
-                    <WebWorkVideo />
+                    <WebWorkVideo {...selectedWorks[0]}/>
                 </div>
                 <div className="w-full h-full absolute work2 translate-y-[110%]">
-                    <WebWorkVideo />
+                    <WebWorkVideo {...selectedWorks[3]} />
                 </div>
                 <div className="w-full h-full absolute work3 translate-y-[110%]">
-                    <WebWorkVideo />
+                    <WebWorkVideo {...selectedWorks[1]} />
                 </div>
                 <div className="w-full h-full absolute work4 translate-y-[110%]">
-                    <WebWorkVideo />
+                    <WebWorkVideo {...selectedWorks[2]} />
                 </div>
                 <div className="w-full h-full absolute work5 translate-y-[110%]">
-                    <WebWorkVideo />
+                    <WebWorkVideo {...selectedWorks[4]} />
                 </div>
             </div>
         </div>
-
-
-      {/* <div className="w-full h-full flex gap-x-4 px-3 py-2">
-        <div className="w-[20%] h-full">
-            <WebWorkDesc />
-        </div>
-        <div className="w-[80%] h-full">
-            <WebWorkVideo />
-        </div>
-      </div> */}
     </div>
   )
 }

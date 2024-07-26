@@ -42,28 +42,9 @@ const Providers = ({children}) => {
       })
     }
   }, [])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      
-      if(counterValue === 100){
-        return;
-      }
-
-      setCounterValue(counterValue + Math.floor(Math.random() * 10) + 1);
-
-      if(counterValue > 100) {
-        setCounterValue(100);
-      }
-
-    }, 100);
-
-    return () => clearInterval(interval);
-
-  }, [counterValue])
     
   return (
-    <LoaderContext.Provider value={{ counterValue, canScroll, setCanScroll }}>
+    <LoaderContext.Provider value={{ counterValue, setCounterValue, canScroll, setCanScroll }}>
         {children}
     </LoaderContext.Provider>
   )

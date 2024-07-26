@@ -44,7 +44,7 @@ const WebWorkVideo = (props) => {
             className="invert size-5 md:size-8 xl:size-10 -rotate-45"
         />
       </div>
-      <video key={props.video} ref={(el) => (videoRef.current[props.id] = el)} id="video" className='w-full h-full object-cover bg-primary' loop={true} controls={false} playsInline={true} muted={true}>
+      <video key={props.video} ref={(el) => (videoRef.current[props.id] = el)} id="video" className='w-full h-full object-cover' loop={true} controls={false} playsInline={true} muted={true}>
         <source src={props.video} type="video/mp4"/>
       </video>
     </div>

@@ -1,14 +1,33 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import gsap from "gsap";
 
 import { LoaderContext } from "./Providers";
 
 const Loader = () => {
 
-    const { counterValue, setCanScroll } = useContext(LoaderContext);
+    const { counterValue, setCounterValue , setCanScroll } = useContext(LoaderContext);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          
+          if(counterValue === 100){
+            return;
+          }
+    
+          setCounterValue(counterValue + Math.floor(Math.random() * 10) + 1);
+    
+          if(counterValue > 100) {
+            setCounterValue(100);
+          }
+    
+        }, 100);
+    
+        return () => clearInterval(interval);
+    
+      }, [counterValue])
 
     useGSAP(() => {
         if(counterValue === 100){
