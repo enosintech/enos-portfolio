@@ -95,16 +95,16 @@ const About = () => {
         <div className='mt-10 h-fit'>
             <div className='w-full h-fit border-y-4 border-white'>
                 <div ref={workSlider} className={`${FontGrotesque.className} w-full h-fit py-4 text-9xl font-grotesk px-3 flex items-center pt-10 gap-x-6 whitespace-nowrap`}>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
-                    <p>SELECTED PROJECTS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
+                    <p>SELECTED WORKS</p>
                 </div>
             </div>
         </div>
