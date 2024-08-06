@@ -35,7 +35,7 @@ const SelectedWorks = () => {
         })
 
         tl.to(".fadeOut", {
-            opacity: 0.1,
+            opacity: 0.05,
         }, "<")
 
         tl.to(".fadeIn1", {
@@ -51,7 +51,7 @@ const SelectedWorks = () => {
         })
 
         tl.to(".fadeIn1", {
-            opacity: 0.1,
+            opacity: 0.05,
         }, "<")
 
         tl.to(".fadeIn2", {
@@ -67,7 +67,7 @@ const SelectedWorks = () => {
         })
 
         tl.to(".fadeIn2", {
-            opacity: 0.1,
+            opacity: 0.05,
         }, "<")
 
         tl.to(".fadeIn3", {
@@ -83,7 +83,7 @@ const SelectedWorks = () => {
         })
 
         tl.to(".fadeIn3", {
-            opacity: 0.1,
+            opacity: 0.05,
         }, "<")
 
         tl.to(".fadeIn4", {
@@ -101,61 +101,61 @@ const SelectedWorks = () => {
         <div className="absolute top-0 left-0 w-[20%] h-full pt-[88px] px-2 pb-2">
             <div className="w-full h-full">
                 <div className="w-full h-full border-2 border-white rounded-[8px] overflow-hidden lg:rounded-[12px] flex lg:flex-col lg:items-end justify-between py-5 lg:text-right pr-3 relative">
-                    <p className="absolute bottom-2 right-4 text-[12px] tracking-tighter font-thin">23 – present</p>
-                    <div className="flex flex-col lg:items-end gap-y-3 lg:gap-y-5 pl-3">
-                        <div className={`${FontGrotesque.className} flex flex-col fadeOut items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.5vw] leading-none tracking-normal uppercase`}>
+                    <p className="text-[1.6rem] font-medium tracking-tighter absolute top-3 left-4">WEB</p>
+                    <div className="flex flex-col lg:items-end gap-y-3 lg:gap-y-5 pl-3 w-full">
+                        <div className={`${FontGrotesque.className} flex flex-col fadeOut items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.3vw] leading-none tracking-normal uppercase`}>
                             <p>ZEDCART</p>
                         </div>
                         <div className="flex items-center gap-x-3 fadeOut">
-                            <div className="bg-zinc-800 rounded-full px-2 p-1">
-                            <p className="font-semibold tracking-tight text-[0.7rem]">WEB</p>
-                            </div>
                             <div className="bg-primary rounded-full px-2 p-1 text-black">
-                            <p className="font-bold tracking-tight text-[0.7rem]">CLIENT</p>
+                                <p className="font-bold tracking-tighter text-[0.6rem]">CLIENT</p>
+                            </div>
+                            <div className="bg-white rounded-full px-2 p-1 text-black">
+                                <p className="font-bold tracking-tighter text-[0.6rem]">NEXT.JS</p>
                             </div>
                         </div>
-                        <div className={`${FontGrotesque.className} fadeIn1 opacity-10 flex flex-col items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.5vw] leading-none tracking-normal uppercase`}>
+                        <div className={`${FontGrotesque.className} fadeIn1 opacity-5 flex flex-col items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.3vw] leading-none tracking-normal uppercase`}>
+                            <p>3D SHOWROOM</p>
+                        </div>
+                        <div className="flex items-center gap-x-3 fadeIn1 opacity-5">
+                            <div className="bg-primary rounded-full px-2 p-1 text-black">
+                                <p className="font-bold tracking-tighter text-[0.6rem]">PERSONAL</p>
+                            </div>
+                            <div className="bg-white rounded-full px-2 p-1 text-black">
+                                <p className="font-bold tracking-tighter text-[0.6rem]">THREE.JS</p>
+                            </div>
+                        </div>
+                        <div className={`${FontGrotesque.className} fadeIn2 opacity-5 flex flex-col items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.3vw] leading-none tracking-normal uppercase`}>
                             <p>YSGTM</p>
                         </div>
-                        <div className="flex items-center gap-x-3 fadeIn1 opacity-10">
-                            <div className="bg-zinc-800 rounded-full px-2 p-1">
-                            <p className="font-semibold tracking-tight text-[0.7rem]">WEB</p>
-                            </div>
+                        <div className="flex items-center gap-x-3 fadeIn2 opacity-5">
                             <div className="bg-primary rounded-full px-2 p-1 text-black">
-                            <p className="font-bold tracking-tight text-[0.7rem]">PERSONAL</p>
+                                <p className="font-bold tracking-tighter text-[0.6rem]">PERSONAL</p>
+                            </div>
+                            <div className="bg-white rounded-full px-2 p-1 text-black">
+                                <p className="font-bold tracking-tighter text-[0.6rem]">NEXT.JS</p>
                             </div>
                         </div>
-                        <div className={`${FontGrotesque.className} flex flex-col fadeIn2 opacity-10 items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.5vw] leading-none tracking-normal uppercase`}>
+                        <div className={`${FontGrotesque.className} flex flex-col fadeIn3 opacity-5 items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.3vw] leading-none tracking-normal uppercase`}>
                             <p>MAKEUPBYRAM</p>
                         </div>
-                        <div className="flex items-center gap-x-3 fadeIn2 opacity-10">
-                            <div className="bg-zinc-800 rounded-full px-2 p-1">
-                            <p className="font-semibold tracking-tight text-[0.7rem]">WEB</p>
-                            </div>
+                        <div className="flex items-center gap-x-3 fadeIn3 opacity-5">
                             <div className="bg-primary rounded-full px-2 p-1 text-black">
-                            <p className="font-bold tracking-tight text-[0.7rem]">CLIENT</p>
+                                <p className="font-bold tracking-tighter text-[0.6rem]">CLIENT</p>
+                            </div>
+                            <div className="bg-white rounded-full px-2 p-1 text-black">
+                                <p className="font-bold tracking-tighter text-[0.6rem]">NEXT.JS</p>
                             </div>
                         </div>
-                        <div className={`${FontGrotesque.className} fadeIn3 opacity-10 flex flex-col items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.5vw] leading-none tracking-normal uppercase`}>
-                            <p>BRIGHT</p>
+                        <div className={`${FontGrotesque.className} fadeIn4 opacity-5 flex flex-col items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.3vw] leading-none tracking-normal uppercase`}>
+                            <p>RUSANGU</p>
                         </div>
-                        <div className="flex items-center gap-x-3 fadeIn3 opacity-10">
-                            <div className="bg-zinc-800 rounded-full px-2 p-1">
-                            <p className="font-semibold tracking-tight text-[0.7rem]">MOBILE</p>
-                            </div>
+                        <div className="flex items-center gap-x-3 fadeIn4 opacity-5">
                             <div className="bg-primary rounded-full px-2 p-1 text-black">
-                            <p className="font-bold tracking-tight text-[0.7rem]">PERSONAL</p>
+                                <p className="font-bold tracking-tighter text-[0.6rem]">CLIENT</p>
                             </div>
-                        </div>
-                        <div className={`${FontGrotesque.className} fadeIn4 opacity-10 flex flex-col items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.5vw] leading-none tracking-normal uppercase`}>
-                            <p>BANTURIDE</p>
-                        </div>
-                        <div className="flex items-center gap-x-3 fadeIn4 opacity-10">
-                            <div className="bg-zinc-800 rounded-full px-2 p-1">
-                            <p className="font-semibold tracking-tight text-[0.7rem]">MOBILE</p>
-                            </div>
-                            <div className="bg-primary rounded-full px-2 p-1 text-black">
-                            <p className="font-bold tracking-tight text-[0.7rem]">CLIENT</p>
+                            <div className="bg-white rounded-full px-2 p-1 text-black">
+                                <p className="font-bold tracking-tighter text-[0.6rem]">NEXT.JS</p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@ const SelectedWorks = () => {
                     <WebWorkVideo {...selectedWorks[2]} />
                 </div>
                 <div className="w-full h-full absolute work5 translate-y-[110%]">
-                    <WebWorkVideo {...selectedWorks[4]} />
+                    <WebWorkVideo {...selectedWorks[2]} />
                 </div>
             </div>
         </div>

@@ -47,8 +47,8 @@ const Navbar = () => {
             height={32}
             className="invert rotate-[45deg]"
         />
-        <div onClick={handleContactClick} className="px-3 p-2 rounded-full border-2 border-white hover:bg-white active:opacity-50 active:scale-95 transition-all group navlink white contactBtn">
-            <p className="font-extrabold text-[1vw] tracking-tighter group-hover:text-black transition-all">CONTACT ME</p>
+        <div onClick={handleContactClick} className="px-3 p-1 rounded-full border-2 border-white hover:bg-white active:opacity-50 active:scale-95 transition-all group navlink white contactBtn">
+            <p className="font-extrabold text-[1vw] tracking-tighter group-hover:text-black transition-all">Contact Me</p>
         </div>
         <div className="absolute w-full h-[2px] bottom-0 left-0 px-3">
             <div className="w-full h-full bg-[rgba(255,255,255,0.3)]">
