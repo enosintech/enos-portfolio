@@ -101,7 +101,7 @@ const SelectedWorks = () => {
         <div className="absolute top-0 left-0 w-[20%] h-full pt-[88px] px-2 pb-2">
             <div className="w-full h-full">
                 <div className="w-full h-full border-2 border-white rounded-[8px] overflow-hidden lg:rounded-[12px] flex lg:flex-col lg:items-end justify-between py-5 lg:text-right pr-3 relative">
-                    <p className="text-[1.6rem] font-medium tracking-tighter absolute top-3 left-4">WEB</p>
+                    <p className="text-[1rem] font-medium tracking-tighter absolute top-3 left-4">WEB</p>
                     <div className="flex flex-col lg:items-end gap-y-3 lg:gap-y-5 pl-3 w-full">
                         <div className={`${FontGrotesque.className} flex flex-col fadeOut items-start lg:items-end max-[490px]:text-[11vw] text-[6vw] md:text-[5vw] lg:text-[2.2vw] xl:text-[3.3vw] leading-none tracking-normal uppercase`}>
                             <p>ZEDCART</p>
