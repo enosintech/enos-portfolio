@@ -18,7 +18,7 @@ const Work = () => {
 
         const panels = gsap.utils.toArray(".panel");
 
-        let tl = gsap.timeline({
+        const tl = gsap.timeline({
             defaults: {
                 ease: "none"
             },
@@ -44,7 +44,7 @@ const Work = () => {
         <div className='absolute z-50 top-0 left-0 w-screen h-10 md:px-4 px-2'>
             <div className='w-full h-full border-b border-white flex items-center justify-between md:text-base text-sm'>
                 <p className={cn("", NohemiSemiBold.className)}>SELECTED WORKS</p>
-                <p>23' — Present </p>
+                <p>23&apos; — Present </p>
             </div>
         </div>
 
