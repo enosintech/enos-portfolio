@@ -22,8 +22,8 @@ const FixedBottomNav = () => {
     }, [])
 
   return (
-    <div className={`fixed bottom-0 left-0 bg-neutral-900 h-12 px-4 w-full flex items-center justify-between z-[9999] ${NohemiBold.className}`}>
-        <p>BASED IN LUSAKA, ZAMBIA</p>
+    <div className={`fixed bottom-0 left-0 lg:text-base sm:text-sm text-xs bg-neutral-900 h-12 px-2 md:px-4 w-full flex items-center justify-between z-[9999] ${NohemiBold.className}`}>
+        <p className="md:block hidden">BASED IN LUSAKA, ZAMBIA</p>
         <div className="flex items-center gap-1">
             <Globe className="size-5 animate-spin-slow" />
             <p className="translate-y-[0.5px]">WORKING GLOBALLY</p>
