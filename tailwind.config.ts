@@ -11,7 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "#1db954"
       },
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+      }
     },
   },
   plugins: [],
