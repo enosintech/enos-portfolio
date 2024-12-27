@@ -34,6 +34,7 @@ const Cursor = () => {
                 transform: `scale(${isActionable ? 0.5 : 1})`,
                 ease: "power4",
                 overwrite: "auto",
+                opacity: 1
             })
 
         }
@@ -47,7 +48,7 @@ const Cursor = () => {
     }, [])
 
   return (
-    <div ref={cursorRef} className="size-4 z-[10000] fixed top-0 left-0 rounded-full select-none pointer-events-none bg-white deep-shadow"></div>
+    <div ref={cursorRef} className="size-4 z-[10000] opacity-0 fixed top-0 left-0 rounded-full select-none pointer-events-none bg-white deep-shadow"></div>
   )
 }
 
