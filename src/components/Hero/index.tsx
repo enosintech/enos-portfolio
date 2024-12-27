@@ -34,8 +34,8 @@ const Hero = () => {
     }, [])
 
   return (
-    <section ref={heroRef} style={{ height: height ? height : "100svh"}} className='w-full bg-black relative z-10'>
-        hero
+    <section ref={heroRef} style={{ height: height ? height : "100svh"}} className='w-full bg-black relative z-10 grid place-items-center'>
+        <p className='text-6xl'>HERO</p>
     </section>
   )
 }
