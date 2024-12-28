@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
 import Image from 'next/image';
 
-import { NohemiLight, NohemiSemiBold } from '@/lib/fonts';
+import { NohemiLight, NohemiMedium} from '@/lib/fonts';
 import { triggerToAnimations } from '@/lib/animations';
 import { cn } from '@/lib/utils';
 
@@ -47,7 +47,7 @@ const About = () => {
 
         <div className='absolute top-0 left-0 w-full h-10 md:px-4 px-2'>
             <div className='w-full h-full border-b border-white flex items-center'>
-                <p className={cn("", NohemiSemiBold.className)}>ABOUT ME</p>
+                <p className={cn("", NohemiMedium.className)}>About Me</p>
             </div>
         </div>
 

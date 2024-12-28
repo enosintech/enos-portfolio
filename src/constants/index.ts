@@ -1,6 +1,6 @@
 export const services = [
     {
-        service: 'Digital Design'
+        service: 'Product Design'
     },
     {
         service: 'Front End Development'

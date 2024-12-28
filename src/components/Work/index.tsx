@@ -25,7 +25,7 @@ const Work = () => {
             scrollTrigger: {
                 trigger: slider.current,
                 pin: true,
-                scrub: 2,
+                scrub: true,
                 start: "top top",
                 end: () => "+=" + slider.current?.offsetWidth
             }
@@ -41,26 +41,26 @@ const Work = () => {
     <div className='overflow-x-hidden'>
       <div ref={slider} style={{ height: height ? height : "100svh"}} className='w-[500vw] flex flex-wrap relative pb-14'>
 
-        <div className='absolute z-50 top-0 left-0 w-screen h-10 md:px-4 px-2'>
-            <div className='w-full h-full border-b border-white flex items-center justify-between md:text-base text-sm'>
-                <p className={cn("", NohemiSemiBold.className)}>SELECTED WORKS</p>
+        <div className='absolute z-50 top-0 left-0 w-screen h-28 md:px-4 px-2'>
+            <div className='w-full h-full flex items-center justify-between lg:text-5xl sm:text-3xl text-xl'>
+                <p className={cn("", NohemiSemiBold.className)}>Featured Work</p>
                 <p>23&apos; — Present </p>
             </div>
         </div>
 
-        <section className='w-[100vw] h-full panel flex justify-center items-end'>
+        <section className='w-[100vw] h-full panel flex justify-center items-end md:px-4 px-2'>
             <WorkListing />
         </section>
-        <section className='w-[100vw] h-full panel flex justify-center items-end'>
+        <section className='w-[100vw] h-full panel flex justify-center items-end md:px-4 px-2'>
             <WorkListing />
         </section>
-        <section className='w-[100vw] h-full panel flex justify-center items-end'>
+        <section className='w-[100vw] h-full panel flex justify-center items-end md:px-4 px-2'>
             <WorkListing />
         </section>
-        <section className='w-[100vw] h-full panel flex justify-center items-end'>
+        <section className='w-[100vw] h-full panel flex justify-center items-end md:px-4 px-2'>
             <WorkListing />
         </section>
-        <section className='w-[100vw] h-full panel flex justify-center items-end'>
+        <section className='w-[100vw] h-full panel flex justify-center items-end md:px-4 px-2'>
             <WorkListing />
         </section>
       </div>
