@@ -14,7 +14,7 @@ const Banner = () => {
 
       const tl = gsap.timeline();
 
-      let cardHeight: any;
+      let cardHeight: number;
 
       function initCards(){
         tl.clear()
