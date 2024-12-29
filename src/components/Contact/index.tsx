@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
 import Image from 'next/image';
 
-import { NohemiBold, NohemiMedium, NohemiSemiBold } from '@/lib/fonts';
+import { NohemiBold, NohemiMedium, NohemiRegular, NohemiSemiBold } from '@/lib/fonts';
 import { triggerToAnimations } from '@/lib/animations';
 import { useViewportHeight } from '@/hooks/useViewportHeight';
 import { socials } from '@/constants';
@@ -99,9 +99,9 @@ const Contact = () => {
         </div>
 
         <div className='w-fit h-full flex flex-col justify-end pb-10'>
-          <div>
-            <p className={cn('text-xs sm:text-lg lg:text-2xl contactText', NohemiMedium.className)}>Minding a project? let&apos;s work together </p>
-            <a href="mailto:hi@enosintech.com" className={cn("text-3xl sm:text-5xl lg:text-7xl mt-1 sm:mt-2 contactText2 actionable hover:opacity-80 active:opacity-60 cursor-pointer", NohemiBold.className)}>hi@enosintech.com</a>
+          <div className="text-right">
+            <p className={cn('text-xs sm:text-lg lg:text-2xl contactText', NohemiRegular.className)}>Minding a project? let&apos;s work together </p>
+            <a href="mailto:hi@enosintech.com" className={cn("text-3xl sm:text-5xl lg:text-7xl mt-1 sm:mt-3 contactText2 actionable hover:opacity-80 active:opacity-60 cursor-pointer", NohemiBold.className)}>hi@enosintech.com</a>
           </div>
         </div>
       </div>
