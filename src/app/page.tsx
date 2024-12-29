@@ -2,7 +2,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Work from '@/components/Work';
 import Banner from '@/components/Banner';
-import Approach from '@/components/Approach';
+import Contact from '@/components/Contact';
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <About />
       <Work />
       <Banner />
-      <Approach />
+      <Contact />
     </>
   )
 }

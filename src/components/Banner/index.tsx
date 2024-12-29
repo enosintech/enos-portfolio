@@ -21,8 +21,8 @@ const Banner = () => {
         cardHeight = (cards[0] as HTMLDivElement).offsetHeight
         cards.forEach((card, index) => {
           if(index > 0){
-            gsap.set(card, {y:index * cardHeight})
-            tl.to(card, {y:0, duration:index*0.5, ease:"none"},0)
+            gsap.set(card, {y:index * cardHeight, opacity: 0})
+            tl.to(card, {y:0, duration:index*0.5, ease:"none", opacity: 1},0)
           }
         })
       }
@@ -47,7 +47,7 @@ const Banner = () => {
       
         <div className='absolute z-50 top-0 left-0 w-screen h-28 md:px-4 px-2'>
             <div className='w-full h-full flex items-center justify-between sm:text-3xl text-2xl'>
-                <p className={cn("", NohemiSemiBold.className)}>With Me You Get</p>
+                <p className={cn("", NohemiSemiBold.className)}>With Me On Your Team</p>
             </div>
         </div>
 

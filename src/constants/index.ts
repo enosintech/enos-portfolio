@@ -57,3 +57,22 @@ export const exploring = [
         service: 'AI Driven Development'
     },
 ]
+
+export const socials = [
+    {
+        link: "#",
+        network: "LinkedIn"
+    },
+    {
+        link: "#",
+        network: "Github"
+    },
+    {
+        link: "#",
+        network: "Instagram"
+    },
+    {
+        link: "#",
+        network: "Bluesky"
+    },
+];
