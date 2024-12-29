@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
 import Image from 'next/image';
 
-import { NohemiBold, NohemiMedium, NohemiRegular, NohemiSemiBold } from '@/lib/fonts';
+import { NohemiBold, NohemiRegular, NohemiSemiBold } from '@/lib/fonts';
 import { triggerToAnimations } from '@/lib/animations';
 import { useViewportHeight } from '@/hooks/useViewportHeight';
 import { socials } from '@/constants';
