@@ -5,6 +5,7 @@ import { gsap, ScrollTrigger } from '@/lib/gsap-loader';
 import { cn } from '@/lib/utils';
 import { useGSAP } from '@gsap/react';
 import BannerListing from '../BannerListing';
+import { whatIBring } from '@/constants';
 
 const Banner = () => {
 
@@ -47,22 +48,22 @@ const Banner = () => {
       
         <div className='absolute z-50 top-0 left-0 w-screen h-28 md:px-4 px-2'>
             <div className='w-full h-full flex items-center justify-between sm:text-3xl text-2xl'>
-                <p className={cn("", NohemiSemiBold.className)}>With Me On Your Team</p>
+                <p className={cn("", NohemiSemiBold.className)}>What I Bring</p>
             </div>
         </div>
 
-        <div className='cards'>
-          <div className='w-full h-96 card grid place-items-center md:px-4 px-2'>
-            <BannerListing />
+        <div className='cards md:px-4 px-2'>
+          <div className='w-full h-96 card grid place-items-center'>
+            <BannerListing title={whatIBring[0].title} description={whatIBring[0].description} />
           </div>
-          <div className='w-full h-96 card grid place-items-center md:px-4 px-2'>
-            <BannerListing />
+          <div className='w-full h-96 card grid place-items-center'>
+            <BannerListing title={whatIBring[1].title} description={whatIBring[1].description} />
           </div>
-          <div className='w-full h-96 card grid place-items-center md:px-4 px-2'>
-            <BannerListing />
+          <div className='w-full h-96 card grid place-items-center'>
+            <BannerListing title={whatIBring[2].title} description={whatIBring[2].description} />
           </div>
-          <div className='w-full h-96 card grid place-items-center md:px-4 px-2'>
-            <BannerListing />
+          <div className='w-full h-96 card grid place-items-center'>
+            <BannerListing title={whatIBring[3].title} description={whatIBring[3].description} />
           </div>
         </div>
 
