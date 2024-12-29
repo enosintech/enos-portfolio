@@ -8,6 +8,7 @@ import Image from 'next/image';
 
 import { NohemiBold, NohemiMedium, NohemiSemiBold } from '@/lib/fonts';
 import { triggerToAnimations } from '@/lib/animations';
+import { useViewportHeight } from '@/hooks/useViewportHeight';
 import { socials } from '@/constants';
 import { gsap } from '@/lib/gsap-loader';
 import { cn } from '@/lib/utils';
@@ -15,6 +16,8 @@ import { cn } from '@/lib/utils';
 const Contact = () => {
 
   const [ time, setTime ] = useState("");
+
+  const height = useViewportHeight();
 
   useGSAP(() => {
 
@@ -74,7 +77,7 @@ const Contact = () => {
   }, [])
 
   return (
-    <div className='w-full h-screen relative pb-12 flex flex-col contact'>
+    <div style={{ height: height ? height : "100svh"}} className='w-full relative pb-12 flex flex-col contact'>
 
       <div className='absolute top-5 md:left-4 left-2 opacity-0 showup'>
         <p className='text-neutral-600 text-sm'>Lusaka, Zambia</p>
@@ -97,8 +100,8 @@ const Contact = () => {
 
         <div className='w-fit h-full flex flex-col justify-end pb-10'>
           <div>
-            <p className={cn('text-sm sm:text-lg lg:text-2xl contactText', NohemiMedium.className)}>Minding a project? let&apos;s work together </p>
-            <a href="mailto:hi@enosintech.com" className={cn("text-4xl sm:text-5xl lg:text-7xl mt-1 sm:mt-2 contactText2 actionable hover:opacity-80 active:opacity-60 cursor-pointer", NohemiBold.className)}>hi@enosintech.com</a>
+            <p className={cn('text-xs sm:text-lg lg:text-2xl contactText', NohemiMedium.className)}>Minding a project? let&apos;s work together </p>
+            <a href="mailto:hi@enosintech.com" className={cn("text-3xl sm:text-5xl lg:text-7xl mt-1 sm:mt-2 contactText2 actionable hover:opacity-80 active:opacity-60 cursor-pointer", NohemiBold.className)}>hi@enosintech.com</a>
           </div>
         </div>
       </div>
