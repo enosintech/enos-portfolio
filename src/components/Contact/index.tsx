@@ -8,7 +8,6 @@ import Image from 'next/image';
 
 import { NohemiBold, NohemiMedium, NohemiSemiBold } from '@/lib/fonts';
 import { triggerToAnimations } from '@/lib/animations';
-import { useViewportHeight } from '@/hooks/useViewportHeight';
 import { socials } from '@/constants';
 import { gsap } from '@/lib/gsap-loader';
 import { cn } from '@/lib/utils';
@@ -16,8 +15,6 @@ import { cn } from '@/lib/utils';
 const Contact = () => {
 
   const [ time, setTime ] = useState("");
-
-  const height = useViewportHeight();
 
   useGSAP(() => {
 
@@ -77,7 +74,7 @@ const Contact = () => {
   }, [])
 
   return (
-    <div style={{ height: height ? height : "100svh" }} className='w-full relative pb-12 flex flex-col contact'>
+    <div className='w-full h-screen relative pb-12 flex flex-col contact'>
 
       <div className='absolute top-5 md:left-4 left-2 opacity-0 showup'>
         <p className='text-neutral-600 text-sm'>Lusaka, Zambia</p>
@@ -111,11 +108,11 @@ const Contact = () => {
         <hr className='border-white' />
         <hr className='border-white' />
         <hr className='border-white' />
-        <hr className='border-white' />
-        <hr className='border-white' />
-        <hr className='border-white' />
-        <hr className='border-white' />
-        <hr className='border-white' />
+        <hr className='border-white sm:block hidden' />
+        <hr className='border-white sm:block hidden' />
+        <hr className='border-white sm:block hidden' />
+        <hr className='border-white sm:block hidden' />
+        <hr className='border-white sm:block hidden' />
 
         <div className='flex flex-wrap justify-between w-full flex-1'>
           {socials.map((network) => (
