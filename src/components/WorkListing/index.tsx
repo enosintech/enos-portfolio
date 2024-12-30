@@ -29,15 +29,13 @@ const WorkListing = () => {
           </div>
 
           <div className='w-full h-[90%] gap-1 flex md:flex-row flex-col'>
-            <div className="md:w-[60%] w-full md:h-full bg-slate-300 grid place-items-center">
-              <video id="video" className='max-w-[90%] w-[90%] h-[80%] max-h-[80%] object-cover rounded-[3px] md:rounded-[6px] deep-shadow' autoPlay={true} loop={true} controls={false} playsInline={true} muted={true}>
+            <div className="md:w-[60%] w-full md:h-full h-[50%] bg-slate-200 grid place-items-center">
+              <video id="video" className='max-w-[90%] w-fit h-fit max-h-[85%] object-contain rounded-[5px] md:rounded-[6px] deep-shadow' autoPlay={true} loop={true} controls={false} playsInline={true} muted={true}>
                 <source src={"/videos/makeupbyram.mp4"} type="video/mp4"/>
               </video>
             </div>
-            <div className="md:w-[40%] w-full md:h-full h-[60%] bg-slate-300 grid place-items-center">
-              <video id="video" className='max-w-[40%] w-[40%] h-[85%] max-h-[85%] object-cover rounded-[6px] md:rounded-[8px] deep-shadow' autoPlay={true} loop={true} controls={false} playsInline={true} muted={true}>
-                <source src={"/videos/makeupbyram.mp4"} type="video/mp4"/>
-              </video>
+            <div className="md:w-[40%] w-full md:h-full h-[50%] bg-slate-200">
+             
             </div>
           </div>
 
