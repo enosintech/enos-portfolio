@@ -95,6 +95,7 @@ const Contact = () => {
             alt="earth background image"
             fill
             className='object-cover z-[-1] scale-150 contactScale'
+            priority
           />
         </div>
 

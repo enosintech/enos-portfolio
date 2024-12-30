@@ -63,6 +63,7 @@ const About = () => {
                     alt="a portrait of enos"
                     fill
                     className='object-cover scale-[2] scaleImg'
+                    priority
                 />
             </div>
             <div className={cn('w-full lg:w-[35%] h-[45%] lg:h-full flex lg:flex-col flex-wrap justify-between lg:justify-normal pt-5 lg:pt-0 lg:gap-10 lg:px-2', NohemiLight.className)}>
