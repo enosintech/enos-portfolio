@@ -1,6 +1,4 @@
-import { NohemiBold } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, Globe } from "lucide-react";
 
 const WorkListing = () => {
   return (
