@@ -1,4 +1,4 @@
-import { NohemiBold, NohemiSemiBold } from "@/lib/fonts";
+import { NohemiBold } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
@@ -36,12 +36,24 @@ const WorkListing = () => {
                 </video>
               </div>
             </div>
-            <div className="lg:w-[20%] w-full lg:h-full h-[35%] flex flex-col justify-between px-1 py-2 items-end">
-              <div></div>
-              <div className="text-right">
+            <div className="lg:w-[20%] w-full lg:h-full h-[35%] flex lg:flex-col flex-wrap justify-between px-1 lg:items-end">
+              <div className="lg:text-right lg:hidden lg:w-fit w-1/2">
+                <p className="text-xs text-neutral-500">SERVICE</p>
+                <p className="text-sm mt-1">Web Design & Development</p>
+              </div>
+              <div className="text-right lg:hidden lg:w-fit w-1/2">
+                <p className="text-xs text-neutral-500">YEAR</p>
+                <p className="text-sm mt-1">2024</p>
+              </div>
+              <div className="lg:block hidden"></div>
+              <div className="lg:text-right lg:h-fit h-1/2 flex flex-col justify-end lg:block">
+                <p className="text-neutral-500 text-xs">Type</p>
+                <p className="text-sm mt-1">Portfolio</p>
+              </div>
+              <div className="text-right lg:h-fit h-1/2 flex flex-col justify-end lg:block">
                 <p className="text-neutral-500 text-xs">Tech</p>
 
-                <div className={cn("text-sm mt-1", NohemiSemiBold.className)}>
+                <div className={cn("text-sm mt-1")}>
                   <p>Next.JS</p>
                   <p>Tailwind CSS</p>
                   <p>GSAP</p>
