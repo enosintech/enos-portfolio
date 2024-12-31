@@ -102,10 +102,121 @@ export const whatIBring = [
 
 export const projects = [
     {
+        name: "Blackboard",
+        service: "Full Stack Development",
+        year: "2025",
+        link: "https://www.makeupbyram.com/",
+        type: "E-Commerce",
+        tech: [
+            {
+                name: "Next.JS",
+            },
+            {
+                name: "Payload CMS"
+            }
+        ],
+        desktopVid: "",
+        laptopVid: ""
+    },
+    {
         name: "Makeupbyram",
         service: "Web Design & Development",
         year: "2024",
-        link: "#",
+        link: "https://www.makeupbyram.com/",
+        type: "Portfolio",
+        tech: [
+            {
+                name: "Next.JS",
+            },
+            {
+                name: "GSAP"
+            }
+        ],
+        desktopVid: "",
+        laptopVid: ""
+    },
+    {
+        name: "Bright",
+        service: "Mobile App Development",
+        year: "2025",
+        link: "https://www.makeupbyram.com/",
+        type: "Wellness App",
+        tech: [
+            {
+                name: "React Native",
+            },
+            {
+                name: "Node.JS"
+            }
+        ],
+        desktopVid: "",
+        laptopVid: ""
+    },
+    {
+        name: "You Seem Good To Me",
+        service: "Full Stack Development",
+        year: "2025",
+        link: "https://www.makeupbyram.com/",
+        type: "Blog",
+        tech: [
+            {
+                name: "Next.JS",
+            },
+            {
+                name: "Payload CMS"
+            }
+        ],
+        desktopVid: "",
+        laptopVid: ""
+    },
+    {
+        name: "ChatRewind",
+        service: "Mobile App Development",
+        year: "2025",
+        link: "https://www.makeupbyram.com/",
+        type: "AI Agent",
+        tech: [
+            {
+                name: "React Native",
+            },
+            {
+                name: "Open AI"
+            }
+        ],
+        desktopVid: "",
+        laptopVid: ""
+    },
+    {
+        name: "Zedcart",
+        service: "Full Stack Development",
+        year: "2025",
+        link: "https://www.makeupbyram.com/",
+        type: "E-Commerce",
+        tech: [
+            {
+                name: "Next.JS",
+            },
+            {
+                name: "Node.JS"
+            }
+        ],
+        desktopVid: "",
+        laptopVid: ""
+    },
+    {
+        name: "Banturide",
+        service: "Mobile App Development",
+        year: "2025",
+        link: "https://www.makeupbyram.com/",
+        type: "Ride Hailing",
+        tech: [
+            {
+                name: "React Native",
+            },
+            {
+                name: "Firebase"
+            },
+        ],
         desktopVid: "",
         laptopVid: ""
     },
