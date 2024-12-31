@@ -1,4 +1,4 @@
-import { NohemiBold, NohemiLight, NohemiSemiBold } from "@/lib/fonts";
+import { NohemiBold, NohemiSemiBold } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
